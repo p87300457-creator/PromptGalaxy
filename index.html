@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>ShopSmart AI — Demo</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="topbar">
+    <div class="brand">ShopSmart <span class="ai">AI</span></div>
+    <div class="search">
+      <input id="searchInput" placeholder="Search products or ask AI (e.g. 'compare iPhone 14 and 15')" />
+      <button id="searchBtn">Search</button>
+    </div>
+    <div class="actions">
+      <button id="signinBtn">Sign up / Login</button>
+      <button id="cartBtn">Cart (<span id="cartCount">0</span>)</button>
+    </div>
+  </header>
+
+  <main class="container">
+    <aside class="sidebar">
+      <h3>Categories</h3>
+      <ul id="categories"></ul>
+      <hr/>
+      <h3>Product Analysis</h3>
+      <div class="ai-panel">
+        <textarea id="aiQuery" placeholder="Type product research query (price trend, comparison, summary)"></textarea>
+        <button id="aiAnalyze">Analyze with AI</button>
+        <div id="aiResult" class="ai-result"></div>
+      </div>
+    </aside>
+
+    <section class="content">
+      <div id="products" class="products-grid"></div>
+    </section>
+  </main>
+
+  <!-- Signup / Login Modal -->
+  <div id="authModal" class="modal hidden">
+    <div class="modal-card">
+      <h2>Sign up / Login</h2>
+      <input id="username" placeholder="Enter username" />
+      <input id="email" placeholder="Enter email" />
+      <button id="saveUser">Save & Continue</button>
+      <button id="closeAuth">Cancel</button>
+    </div>
+  </div>
+
+  <!-- Simple cart drawer -->
+  <div id="cartDrawer" class="cart-drawer hidden">
+    <h3>Your Cart</h3>
+    <div id="cartItems"></div>
+    <div class="cart-footer">
+      <div>Total: ₹<span id="cartTotal">0</span></div>
+      <button id="checkout">Checkout</button>
+    </div>
+  </div>
+
+  <footer class="footer">© ShopSmart AI Demo</footer>
+
+  <script src="products.json" type="application/json" id="productsJSON"></script>
+  <script src="ai.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>

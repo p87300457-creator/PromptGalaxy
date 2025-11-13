@@ -1,0 +1,42 @@
+[
+  {
+    "id": 1,
+    "title": "Smart Watch Pro",
+    "category": "Wearables",
+    "price": 3999,
+    "img": "https://images.unsplash.com/photo-1518544882814-9a2b8c0d0b60?w=800&q=60",
+    "rating": 4.3
+  },
+  {
+    "id": 2,
+    "title": "Noise-Cancelling Headphones",
+    "category": "Audio",
+    "price": 2499,
+    "img": "https://images.unsplash.com/photo-1518444020269-9c6f2b0a6c3d?w=800&q=60",
+    "rating": 4.5
+  },
+  {
+    "id": 3,
+    "title": "Wireless Earbuds X",
+    "category": "Audio",
+    "price": 1299,
+    "img": "https://images.unsplash.com/photo-1585386959984-a4155228f1b9?w=800&q=60",
+    "rating": 4.1
+  },
+  {
+    "id": 4,
+    "title": "Classic Denim Jacket",
+    "category": "Fashion",
+    "price": 1999,
+    "img": "https://images.unsplash.com/photo-1520975925084-6b7c9f5b1c62?w=800&q=60",
+    "rating": 4.2
+  },
+  {
+    "id": 5,
+    "title": "Portable Bluetooth Speaker",
+    "category": "Audio",
+    "price": 999,
+    "img": "https://images.unsplash.com/photo-1509515837292-1e40a60b351a?w=800&q=60",
+    "rating": 4.0
+  }
+]
